@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<!--   This script retrieves the Astronomy Picture of the Day (APOD) from NASA
+      and displays it on the webpage based on user-selected date.-->
+<head>
+    <!-- Define the character encoding for the document -->
+    <meta charset="utf-8" />
+    <!-- Viewport settings to ensure proper scaling on mobile devices -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Title of the webpage displayed in the browser tab -->
+    <title>Astronomy Picture of the Day</title>
+    <!-- Link to CSS file for styling the webpage -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to JavaScript file; 'defer' ensures it loads after the HTML -->
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <!-- Header section containing the main title of the webpage -->
+    <header>
+        <h1>Astronomy Picture of the Day</h1>
+    </header>
+
+    <!-- Main content section of the webpage -->
+    <section>
+        <h1></h1>
+        <!-- Container for date input and image/video display -->
+        <div id="dateContainer">
+            <!-- Label for the date input field -->
+            <label for="photoDate">Picture Date</label>
+            <!-- Input field for selecting the date -->
+            <input type="date" id="dateBox" /><br />
+            <!-- Container for displaying the NASA image and related details -->
+            <div id="nasaImage" alt="">
+                <!-- Image element for displaying the astronomy picture -->
+                <img src="" alt="" id="image">
+                <!-- Heading for the image title -->
+                <h1 id="imageTitle"></h1>
+                <!-- Paragraph for the image description -->
+                <p id="imageDescription"></p>
+                <!-- Iframe for displaying video content (if applicable) -->
+                <iframe src="" frameborder="0" id="video"></iframe>     
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+

@@ -1,0 +1,136 @@
+/*   This script retrieves the Astronomy Picture of the Day (APOD) from NASA
+  and displays it on the webpage based on user-selected date.*/
+
+/* Apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box; /* Firefox */
+   -webkit-box-sizing: border-box; /* Safari, Chrome */
+   box-sizing: border-box; /* Standard */
+}
+
+/* Reset default margins, padding, and font settings for a consistent baseline */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+   width: 960px;
+   background: white;
+   margin: 0 auto;
+   font-family: Verdana, Geneva, sans-serif; 
+}
+
+ol, ul {
+   list-style: none; /* Remove default list styling */
+}
+
+/* Style for the page header */
+header {
+   background: #5472B2; /* Header background color */
+   width: 100%;
+   color: #FFFFFF; /* Header text color */
+   font-size: 48px; /* Header font size */
+   text-align: center; /* Center-align header text */
+   line-height: 1.5em;
+   margin-bottom: 0;
+}
+
+/*-------------------- Project Styles ------------------*/
+
+/* Style for the main content section */
+section {
+   background-color: #FFDB70; /* Background color for section */
+   margin-top: 0;
+   padding-bottom: 20px;
+   user-select: none; /* Disable text selection */
+   height: 980px; /* Fixed height for the section */
+}
+
+/* Style for the section heading */
+section > h1 {
+   font-size: 2.8em; /* Font size for the heading */
+   text-align: center; /* Center-align heading text */
+   margin: 0;
+   padding: 20px 0;
+}
+
+/* Style for paragraphs in the section */
+section > p {
+   width: 800px;
+   margin: 0 auto; /* Center-align paragraph */
+   font-size: 1.3em; /* Font size for paragraph text */
+   line-height: 1.3;
+   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+   text-align: center; /* Center-align text */
+}
+
+/* Style for the date input container */
+div#dateContainer {
+   width: 800px;
+   margin: 10px auto; /* Center-align container */
+   text-align: center; /* Center-align content */
+}
+
+/* Style for the NASA image container */
+div#nasaImage {
+   width: 800px;
+   display: block;
+   margin-top: 20px;
+   text-align: center; /* Center-align content */
+}
+
+/* Style for the heading inside the NASA image container */
+div#nasaImage h1 {
+   font-size: 1.2em; /* Font size for image title */
+   letter-spacing: 0.2em; /* Space between letters */
+}
+
+/* Style for paragraphs inside the NASA image container */
+div#nasaImage p {
+   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+   font-size: 1em; /* Font size for image description */
+   margin: 10px 0;
+   text-align: justify; /* Justify text alignment */
+   line-height: 1.2;
+}
+
+/* Style for images */
+img {
+   display: block;
+   height: 500px; /* Fixed height for images */
+   width: auto;
+   max-width: 800px; /* Maximum width for images */
+   margin: 10px auto; /* Center-align image */
+}
+
+/* Style for iframes */
+iframe {
+   display: block;
+   width: 800px;
+   height: 500px; /* Fixed height for iframes */
+   margin: 10px auto; /* Center-align iframe */
+}
